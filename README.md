@@ -8,3 +8,4 @@
 
 ### Input : file, standard input, BUFFER_SIZE
 
+![alt text](https://github.com/Palm78070/get_next_line/blob/main/gnl.drawio.png)
