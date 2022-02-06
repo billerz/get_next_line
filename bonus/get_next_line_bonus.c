@@ -1,11 +1,12 @@
 #include "get_next_line_bonus.h"
+#include <stdio.h>
 
 char *get_next_line(int fd)
 {
         char *res;
         int c;
         int i;
-        static int fd2;
+        static int fd2 = 0;
 
         res = (char *)malloc(sizeof(char));
         i = 0;

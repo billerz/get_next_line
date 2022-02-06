@@ -1,16 +1,16 @@
 #include "get_next_line.h"
+#include <stdio.h>
 
 char *get_next_line(int fd)
 {
         char *res;
         int c;
         int i;
-        static int fd2;
+        static int fd2 = 0;
 
         res = (char *)malloc(sizeof(char));
         i = 0;
         c = ft_getchar(fd);
-	fd2 = 0;
         if (fd2 == 0)
                 fd2 = fd;
         if (!res || !(check_fd(fd, fd2)) || c == EOF)
