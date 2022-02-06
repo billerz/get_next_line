@@ -10,6 +10,7 @@ char *get_next_line(int fd)
         res = (char *)malloc(sizeof(char));
         i = 0;
         c = ft_getchar(fd);
+	fd2 = 0;
         if (fd2 == 0)
                 fd2 = fd;
         if (!res || !(check_fd(fd, fd2)) || c == EOF)
